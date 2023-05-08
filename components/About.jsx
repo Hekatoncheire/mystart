@@ -1,18 +1,21 @@
 import React from 'react'
+import Image from 'next/image'
 
 const About = () => {
     return (
-        <div id='about' className='flex-col justify-center items-center mt-20'>
-            <h1 className='text-4xl text-center font-bold mb-20 sm:text-5xl'>Rólunk</h1>
-            <p className='px-10 text-justify mb-5'>
-                A mystart-nál arra törekszünk, hogy a művészeti világ új tehetségeit támogassuk és felkaroljuk, segítve őket a karrierjük építésében. Küldetésünk, hogy inspiráljuk, támogassuk és ösztönözzük a fiatal művészeket, valamint lehetőséget teremtsünk számukra arra, hogy műveiket a világ számára bemutathassák.
-            </p>
-            <p className='px-10 text-justify mb-5'>
-                Víziónk, hogy egy olyan közösséget hozzunk létre, ahol a művészet szerelmesei és a tehetséges művészek együtt dolgozhatnak, tanulhatnak egymástól és inspirálhatják egymást. Célunk, hogy az online aukciós házunk legyen a művészek és a gyűjtők közötti kapocs, és az egyik vezető platformként szolgáljon az új és izgalmas művészeti kincsek felfedezésében.
-            </p>
-            <p className='px-10 text-justify mb-5'>
-                Három alapvető értékünk: minőség, innováció és megbízhatóság. Ezeken az értékeken alapulva csapatunk elkötelezett amellett, hogy a lehető legjobb műveket ajánljuk fel a művészeti piac számára, és a lehető legjobb élményt nyújtsuk mind a művészek, mind a gyűjtők számára.
-            </p>
+        <div id='about' className='flex justify-center items-center mt-20'>
+            <div className='basis-1/2 mr-20 flex-col justify-start'>
+                <h1 className='text-4xl font-bold mb-20 sm:text-7xl'>A művészet a valóság tükre - segítünk megtalálni a saját tükörképed</h1>
+                <button className='border border-black p-5'>Nézd meg aukcióinkat</button>
+            </div>
+            <div className='items-center justify center'>
+                <Image
+                    alt="woman in art gallery"
+                    src="https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YXJ0JTIwZ2FsbGVyeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    width={600}
+                    height={600}
+                />
+            </div>
         </div>
     )
 }
