@@ -5,7 +5,7 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 const Navbar = () => {
     const [nav, setNav] = useState(false)
     const [color, setColor] = useState('transparent')
-    const [textColor, setTextColor] = useState('white')
+    const [textColor, setTextColor] = useState('#ffffff')
 
     const handleNav = () => {
         setNav(!nav)
@@ -28,7 +28,7 @@ const Navbar = () => {
         <div style={{backgroundColor: `${color}`}} className='fixed left-0 top-0 w-full z-10 ease-in duration-300'>
             <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 text-white'>
                 <Link href='/'>
-                    <h1 style={{color: `${textColor}`}} className='font-bold text-4xl'>myst<span className={textColor === '#ffffff' ? 'font-outline-white text-transparent' : 'font-outline-black text-transparent'}>art</span></h1>
+                    <h1 style={{color: `${textColor}`}} className='font-bold text-4xl'>mist<span className={textColor === '#ffffff' ? 'font-outline-white text-transparent' : 'font-outline-black text-transparent'}>art</span></h1>
                 </Link>
                 <ul style={{color: `${textColor}`}} className='hidden sm:flex'>
                     <li className='p-4'>

@@ -18,3 +18,12 @@ html {
 .custom-img {
   background-image: url('https://images.unsplash.com/photo-1518998053901-5348d3961a04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXJ0JTIwZ2FsbGVyeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1400&q=60');
 }
+
+.marquee {
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0);}
+  100% { transform: translateX(-100%);}
+}
